@@ -1,0 +1,230 @@
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+  *{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+  }
+
+  body{
+  background: linear-gradient(rgba(0,0,0,0.67),rgba(251, 86, 41, 0.18)),url(sample.jpg) ;
+  background-position: center;
+  background-repeat:no-repeat ;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+  .navdiv{
+  display: flex;
+  align-items: center;
+  justify-content:center ; 
+  }
+
+  .navlogo a img{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:39%;
+    height:39%;
+    padding-top: 12px;
+    padding-left: 50px;
+  } 
+  ul {
+  list-style: none;
+  display: flex;
+  padding-right: 40px;
+
+  }
+  ul li{
+    padding-right: 70px;
+    
+  }
+  ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    letter-spacing: 0.5px;
+
+  }
+  ul li a::after{
+    content: "";
+    background-color: rgb(238, 62, 8);
+    height: 3px;
+    width: 100%;
+    display: block;
+    border-radius: 10%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+  }
+  ul li a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  ul li a:hover{
+    color: aqua;
+  }
+  .wrapper{
+    width: 450px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-left:37% ;
+   margin-right: 50% ;
+   margin-top: 1.1%;
+   backdrop-filter: blur(40px);
+   border: 2px solid rgba(240, 240, 240, 0.6);
+   border-radius: 20px;
+   box-shadow: 10px 10px 30px 14px rgba(0, 0, 0, 0.708);
+   overflow: hidden;
+   transition: .2s ease;
+   position:relative;
+   bottom: 0px;;
+   transform: scale(0);
+    
+  }
+  .wrapper.active-popup{
+    transform: scale(1);
+
+  }
+  .wrapper.active{
+   height: 530px;
+   bottom:29px;
+   transition: .2s ease;
+  }
+  .form{
+    position: relative;
+    width: 82%;
+  }
+  h2{
+    text-align: center;
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 0.971);
+    font-size: 2em;
+    font-weight: 700;
+    cursor:default;
+  }
+  .input-box{
+    height: 51px;
+    border-bottom: 2px solid black;
+    margin: 20px;
+    
+
+  }
+  
+  .input-box label{
+    position: relative;
+    top: -30px;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .input-box input:focus~label,.input-box input:valid~label{
+    top:-55px
+  }
+  
+.input-box input{
+  width: 100%;
+  height: 100%;
+  padding-top: 13px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: rgb(251, 169, 131);
+  font-weight: 400;
+  padding-right: 40px;
+  
+}
+.input-box span{
+  position: absolute;
+  right: 25px;
+  line-height: 69px;
+}
+  
+.remember{
+  display: flex;
+  justify-content:space-between;
+  margin: 0 18px 0 18px;
+
+  font-size: 0.90em
+}
+.remember label{
+  margin-right:70px
+}
+.remember a{
+  text-decoration: none;
+  color: 
+  rgb(247, 247, 247);
+}
+.remember a:hover{
+  text-decoration: underline;
+  color: aqua;
+}
+
+.btn{
+  width: 89%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-top: 23px;
+  margin-bottom: 30px;
+  background-color:black ;
+  color: rgb(247, 247, 247);
+  font-size: 1em;
+  cursor: pointer;
+  
+}
+
+.login-register{
+  font-size: 0.90em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-register p a{
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+}
+.login-register p a:hover{
+  text-decoration: underline;
+  color: aqua;
+}
+.wrapper .form.login{
+  transition: transform .3s ease;
+  transform: translateX(0);
+}
+.wrapper.active .form.login{
+  transform: translateX(-400px);
+  transition: none ;
+}
+.wrapper .form.register{
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper.active .form.register{
+  transition: transform .3s ease;
+  transform: translateX(0);
+}
+   /* object-position: 6% 9% to shift image part */
+
+
+
+
+
+
+  
+
+  
+
+   
+    
