@@ -107,6 +107,7 @@
     font-size: 2em;
     font-weight: 700;
     cursor:default;
+
   }
   .input-box{
     height: 51px;
@@ -187,7 +188,8 @@
 .login-register{
   font-size: 0.90em;
   text-align: center;
-  margin-top: 20px;
+  position: relative;
+  bottom: 3px;
 }
 
 .login-register p a{
@@ -215,6 +217,48 @@
   transition: transform .3s ease;
   transform: translateX(0);
 }
+.login-register .icon{
+  
+  text-align: start;
+  display: inline;
+  position: relative;
+  bottom: 24px;
+  left: 45px;
+  
+}
+.login-register .social .facebook img{
+  width: 10%;
+  position: relative;
+  top: 12px;
+}
+.login-register .social .google img{
+  width: 12%;
+  position: relative;
+  top: 16px;
+}
+.login-register .social .facebook:hover .plain{
+  display: none;
+}
+.login-register .social .facebook .color{
+  display: none;
+}
+.login-register .social .facebook:hover .color{
+  display:inline;
+  width: 11%;
+}
+.login-register .social .google:hover .plain{
+  display: none;
+}
+.login-register .social .google .color{
+  display: none;
+}
+.login-register .social .google:hover .color{
+  display: inline;
+  width: 12%;
+  position: relative;
+  top: 16px;
+}
+
    /* object-position: 6% 9% to shift image part */
 
 
