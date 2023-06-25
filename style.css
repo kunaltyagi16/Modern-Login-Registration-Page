@@ -10,7 +10,7 @@
   }
 
   body{
-  background: linear-gradient(rgba(0,0,0,0.67),rgba(251, 86, 41, 0.18)),url(sample.jpg) ;
+  background: linear-gradient(rgba(0,0,0,0.67),rgba(251, 86, 41, 0.18)),url(images/sample.jpg) ;
   background-position: center;
   background-repeat:no-repeat ;
   background-attachment: fixed;
