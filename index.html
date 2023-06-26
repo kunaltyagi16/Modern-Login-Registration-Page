@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body><div class="main">
    
@@ -32,8 +33,9 @@
                     <label >Username</label>
                 </div>
                 <div class="input-box">
-                    <span><img src="images/lock.svg" alt="" style="width: 1.1em; "></span>
-                    <input type="password" required>
+                    <span><img src="images/eye-off.svg" alt="" id="eyeicon" style="width: 1.2em; position: relative; top:2px; right:4px; cursor: pointer;">
+                    <img src="images/lock.svg" alt="" style="width: 1.1em; "></span>
+                    <input type="password" id="password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember">
@@ -67,14 +69,16 @@
                     <label >Username</label>
                 </div>
                 <div class="input-box">
-                    <span><img src="images/lock.svg" alt="" style="width: 1.1em; "></span>
-                    <input type="password" required>
+                    <span><img src="images/eye-off.svg" alt="" id="eyeicon2" style="width: 1.2em; position: relative; top:2px; right:4px; cursor: pointer;">
+                        <img src="images/lock.svg" alt="" style="width: 1.1em; "></span>
+                        <input type="password" id="password2" required>
                     <label>Password</label>
                 </div>
                 <div class="remember">
                     <input type="checkbox" >
                     <label>I agree to the terms & conditions</label>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LcQC8wmAAAAACJGdOd6klXt8CNEapbnsRHSxNNO" ></div>   
                 <button type="submit" class="btn">Register</button>
                 <div class="login-register">
                     <p>Already have an account? <a href="#" class="login-link">Login</a></p>
@@ -87,5 +91,6 @@
    
 </div>
 <script src="script.js"></script>
+
 </body>
 </html>

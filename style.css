@@ -13,7 +13,7 @@
   background: linear-gradient(rgba(0,0,0,0.67),rgba(251, 86, 41, 0.18)),url(images/sample.jpg) ;
   background-position: center;
   background-repeat:no-repeat ;
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-size: cover;
   }
 
@@ -75,30 +75,40 @@
     justify-content: center;
    margin-left:37% ;
    margin-right: 50% ;
-   margin-top: 1.1%;
+   margin-top: 0.7%;
    backdrop-filter: blur(40px);
    border: 2px solid rgba(240, 240, 240, 0.6);
    border-radius: 20px;
    box-shadow: 10px 10px 30px 14px rgba(0, 0, 0, 0.708);
    overflow: hidden;
-   transition: .2s ease;
+   transition: .4s ease;
    position:relative;
-   bottom: 0px;;
-   transform: scale(0);
+  
+   
+   transform: scale (0);
     
   }
   .wrapper.active-popup{
     transform: scale(1);
-
   }
   .wrapper.active{
-   height: 530px;
-   bottom:29px;
-   transition: .2s ease;
+  
+   height: 550px;
+   margin-top: -10px;
+   transition: .4s ease;
+   position: relative;
+   bottom: 17px; 
   }
   .form{
     position: relative;
     width: 82%;
+    
+  }
+  .form.login{
+    bottom: 9px;
+  }
+  .form.register{
+    bottom: 20px;
   }
   h2{
     text-align: center;
@@ -189,7 +199,8 @@
   font-size: 0.90em;
   text-align: center;
   position: relative;
-  bottom: 3px;
+  bottom: 10px;
+  top: 3px;
 }
 
 .login-register p a{
@@ -231,11 +242,13 @@
   position: relative;
   top: 12px;
 }
+
 .login-register .social .google img{
   width: 12%;
   position: relative;
   top: 16px;
 }
+
 .login-register .social .facebook:hover .plain{
   display: none;
 }
@@ -244,7 +257,6 @@
 }
 .login-register .social .facebook:hover .color{
   display:inline;
-  width: 11%;
 }
 .login-register .social .google:hover .plain{
   display: none;
@@ -254,11 +266,15 @@
 }
 .login-register .social .google:hover .color{
   display: inline;
-  width: 12%;
-  position: relative;
-  top: 16px;
+  
 }
-
+.form.register .g-recaptcha{
+  position: relative;
+  top: 10px;
+  left: 28px;
+  transform: scale(0.85);
+  
+}
    /* object-position: 6% 9% to shift image part */
 
 
