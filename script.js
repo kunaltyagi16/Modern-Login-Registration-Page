@@ -7,6 +7,15 @@ const password = document.getElementById("password")
 const eyeicon2 = document.getElementById("eyeicon2")
 const password2 = document.getElementById("password2")
 
+regLink.addEventListener('click',()=>{
+ wrapper.classList.add('active')
+}); 
+loginLink.addEventListener('click',()=>{
+    wrapper.classList.remove('active')
+}); 
+btnClick.addEventListener('click',()=>{
+wrapper.classList.add('active-popup')
+}); 
 
 eyeicon.onclick=function()
 {
@@ -35,14 +44,3 @@ eyeicon2.onclick=function()
         eyeicon2.src="images/eye-off.svg"
     }
 }
-
-
-regLink.addEventListener('click',()=>{
- wrapper.classList.add('active')
-}); 
-loginLink.addEventListener('click',()=>{
-    wrapper.classList.remove('active')
-}); 
-btnClick.addEventListener('click',()=>{
-wrapper.classList.add('active-popup')
-}); 
